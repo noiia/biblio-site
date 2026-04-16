@@ -1,0 +1,7 @@
+services:
+  biblio-app:
+    build: .
+    container_name: biblio-app
+    ports:
+      - "3010:80"
+    restart: unless-stopped
