@@ -36,6 +36,14 @@ export const sitography = [
 	},
 	{
 		type: "web",
+		title: "Le règlement général sur la protection des données",
+		publisher: "CNIL",
+		published: "12/01/2016",
+		consulted: "29/01/2026",
+		url: "https://www.cnil.fr/fr/reglement-europeen-protection-donnees",
+	},
+	{
+		type: "web",
 		title: "Top Cloud Development Statistics 2026",
 		author: "Matt Li",
 		published: "13/11/2025",
