@@ -51,31 +51,41 @@ function getEmoji(type) {
 
 // generic card renderer
 function RenderCard({ item, search, emoji }) {
+	const Wrapper = item.url
+		? ({ children }) => (
+				<a href={item.url} target="_blank" rel="noopener noreferrer">
+					{children}
+				</a>
+			)
+		: ({ children }) => <div>{children}</div>;
+
 	return (
-		<Card>
-			<CardContent className="p-4 flex justify-between items-start">
-				<div>
-					<div className="text-lg font-medium">
-						{highlight(item.title, search)}
+		<Wrapper>
+			<Card>
+				<CardContent className="p-4 flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+					<div className="text-lg font-medium wrap-break-word">
+						{highlight(item.title || "", search)}
 					</div>
 
 					{item.author || item.authors ? (
-						<div className="text-sm text-gray-600">
+						<div className="text-sm text-gray-600 wrap-break-word">
 							{item.author || item.authors?.join(", ")} •{" "}
 							{item.year || item.published}
 						</div>
 					) : null}
 
 					{item.source || item.publisher ? (
-						<div className="text-sm text-gray-500">
+						<div className="text-sm text-gray-500 wrap-break-word">
 							{item.source || item.publisher}
 						</div>
 					) : null}
-				</div>
 
-				<div className="text-2xl ml-4">{emoji}</div>
-			</CardContent>
-		</Card>
+					<div className="text-xl sm:text-2xl self-end sm:self-auto">
+						{emoji}
+					</div>
+				</CardContent>
+			</Card>
+		</Wrapper>
 	);
 }
 
@@ -92,21 +102,20 @@ export default function App() {
 	const filteredVis = filterData(visuals);
 
 	return (
-		<div className="min-h-screen bg-gray-50 p-8">
-			<div className="max-w-4xl mx-auto space-y-8">
+		<div className="min-h-screen bg-gray-50 p-4 sm:p-6 md:p-8">
+			<div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
 				{/* HEADER */}
-				<div className="flex items-center justify-between mb-6">
+				<div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
 					<Logo />
 				</div>
 
 				{/* SEARCH */}
-				<div className="flex gap-2">
+				<div className="flex flex-col sm:flex-row gap-2">
 					<Input
 						value={search}
 						onChange={(e) => setSearch(e.target.value)}
 						placeholder="Search across all sources..."
 					/>
-					<Button>🔍</Button>
 				</div>
 
 				{/* 📘 BIBLIOGRAPHIE */}

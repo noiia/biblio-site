@@ -5,6 +5,7 @@ export const bibliography = [
 		authors: ["Michael Kolberg"],
 		publisher: "Pearson Deutschland GmbH",
 		year: 2008,
+		url: "https://books.google.com/books?hl=fr&lr=&id=ksK9PLrdOAwC&oi=fnd&pg=PA207&dq=StarOffice+9:+die+vollst%C3%A4ndige+Alternative+zu+Microsoft+Office&ots=Oi7-Vg1WUH&sig=vZXhg0lDdCmo68J7DSxN7g1WR3s",
 	},
 	{
 		type: "book",
@@ -12,6 +13,15 @@ export const bibliography = [
 		authors: ["Jean Hollis Weber"],
 		publisher: "O'Reilly Media, Inc.",
 		year: 2004,
+		url: "https://books.google.com/books?hl=fr&lr=&id=21AgaZUBMgAC&oi=fnd&pg=PA1&dq=OpenOffice.org+Writer:+the+free+alternative+to+Microsoft+Word&ots=DNIfTSFrco&sig=Z7vEKEwnouudqcecvpThnN1pZbQ",
+	},
+	{
+		type: "book",
+		title: "Beyond MS Word: Alternatives and Developments",
+		authors: ["Christian Rapp", "Till Heilmann", "Otto Kruse"],
+		publisher: "Springer, Cham",
+		year: 2023,
+		url: "https://link.springer.com/chapter/10.1007/978-3-031-36033-6_3",
 	},
 ];
 
@@ -22,6 +32,7 @@ export const sitography = [
 		publisher: "Industry Research",
 		published: "12/01/2026",
 		consulted: "29/01/2026",
+		url: "https://www.industryresearch.biz/market-reports/cloud-computing-market-109191",
 	},
 	{
 		type: "web",
@@ -29,6 +40,7 @@ export const sitography = [
 		author: "Matt Li",
 		published: "13/11/2025",
 		consulted: "27/01/2026",
+		url: "https://www.secondtalent.com/resources/top-cloud-development-statistics-market-size-adoption-rates/",
 	},
 	{
 		type: "web",
@@ -37,6 +49,7 @@ export const sitography = [
 		author: "Florian Brunel",
 		published: "01/02/2024",
 		consulted: "28/01/2026",
+		url: "https://www.it-connect.fr/la-cnil-autorise-microsoft-a-heberger-les-donnees-de-sante-des-francais/",
 	},
 	{
 		type: "web",
@@ -44,66 +57,77 @@ export const sitography = [
 		publisher: "Microsoft",
 		published: "04/12/2025",
 		consulted: "28/01/2026",
+		url: "https://learn.microsoft.com/fr-fr/compliance/regulatory/offering-hds-france",
 	},
 	{
 		type: "web",
 		title: "Agence du Numérique en Santé",
 		publisher: "ANS",
 		consulted: "29/01/2026",
+		url: "https://esante.gouv.fr",
 	},
 	{
 		type: "web",
 		title: "Posture générale et actions de l'ANSSI sur le cloud",
 		publisher: "ANSSI",
 		consulted: "29/01/2026",
+		url: "https://cyber.gouv.fr/enjeux-technologiques/cloud/",
 	},
 	{
 		type: "web",
 		title: "OpenOffice.org",
 		publisher: "Wikipédia",
 		consulted: "04/02/2026",
+		url: "https://fr.wikipedia.org/wiki/OpenOffice.org",
 	},
 	{
 		type: "web",
 		title: "StarOffice",
 		publisher: "Wikipédia",
 		consulted: "04/02/2026",
+		url: "https://fr.wikipedia.org/wiki/StarOffice",
 	},
 	{
 		type: "web",
 		title: "The Document Foundation",
 		publisher: "Wikipédia",
 		consulted: "04/02/2026",
+		url: "https://fr.wikipedia.org/wiki/The_Document_Foundation",
 	},
 	{
 		type: "web",
 		title: "LibreOffice",
 		publisher: "Wikipédia",
 		consulted: "04/02/2026",
+		url: "https://fr.wikipedia.org/wiki/LibreOffice",
 	},
 	{
 		type: "web",
 		title: "OnlyOffice",
 		publisher: "Wikipédia",
 		consulted: "06/02/2026",
+		url: "https://fr.wikipedia.org/wiki/OnlyOffice",
 	},
 	{
 		type: "web",
 		title: "Google Workspace",
 		publisher: "Wikipédia",
 		consulted: "06/02/2026",
+		url: "https://fr.wikipedia.org/wiki/Google_Workspace",
 	},
 	{
 		type: "web",
 		title: "iWork",
 		publisher: "Wikipédia",
 		consulted: "06/02/2026",
+		url: "https://fr.wikipedia.org/wiki/IWork",
 	},
 	{
 		type: "web",
 		title: "Apple iWork",
 		publisher: "Apple",
 		consulted: "06/02/2026",
+		url: "https://www.apple.com/fr/iwork/",
 	},
 ];
 
@@ -111,10 +135,11 @@ export const visuals = [
 	{
 		id: "I1",
 		title:
-			"Histogramme de répartition des systèmes d’exploitation vendus entre 2009 et 2025",
+			"Histogramme de répartition des systèmes d'exploitation vendus entre 2009 et 2025",
 		source: "Statista",
 		published: "05/03/2025",
 		consulted: "29/01/2026",
+		url: "https://www.msn.com/fr-fr/actualite/other/la-domination-mondiale-de-windows-s-érode/ar-AA1CeVVr",
 	},
 	{
 		id: "I2",
@@ -122,6 +147,7 @@ export const visuals = [
 		source: "Infologo",
 		published: "09/2024",
 		consulted: "27/01/2026",
+		url: "https://infologo.ch/wp-content/uploads/2024/09/M365-Apps.webp",
 	},
 	{
 		id: "I3",
@@ -129,6 +155,7 @@ export const visuals = [
 		source: "Theatrum-bell",
 		published: "03/2025",
 		consulted: "28/01/2026",
+		url: "https://theatrum-belli.com/wp-content/uploads/2025/03/Souverainete-numerique.jpg",
 	},
 	{
 		id: "I4",
@@ -136,41 +163,48 @@ export const visuals = [
 		source: "CNIL",
 		published: "24/05/2016",
 		consulted: "28/01/2026",
+		url: "https://www.cnil.fr/fr/reglement-europeen-protection-donnees",
 	},
 	{
 		id: "I5",
 		title: "Logo OpenOffice",
 		source: "Microsoft Store",
 		consulted: "09/02/2026",
+		url: "https://apps.microsoft.com/detail/xp89j5462cmgjd?hl=fr-FR&gl=CV",
 	},
 	{
 		id: "I6",
 		title: "Logo LibreOffice",
 		source: "iledefrance-unowhy.com",
 		consulted: "09/02/2026",
+		url: "https://iledefrance-unowhy.com/produit/libreoffice/",
 	},
 	{
 		id: "I7",
 		title: "Logos suite LibreOffice",
 		source: "paulojose-brainstorm",
 		consulted: "09/02/2026",
+		url: "http://paulojose-brainstorm.blogspot.com/2020/05/libreoffice-new-2020-icons.html",
 	},
 	{
 		id: "I8",
 		title: "Logo OnlyOffice",
 		source: "jaimelesstartups",
 		consulted: "09/02/2026",
+		url: "https://www.jaimelesstartups.fr/onlyoffice-application-bureautique-dans-le-cloud/",
 	},
 	{
 		id: "I9",
 		title: "Logos Google Workspace",
-		source: "L’Usine Digitale",
+		source: "L'Usine Digitale",
 		consulted: "09/02/2026",
+		url: "https://www.usine-digitale.fr/article/workspace-la-suite-bureautique-de-google-accessible-a-tous-sur-gmail.N1104809",
 	},
 	{
 		id: "I10",
 		title: "Logos iWork",
 		source: "Reddit",
 		consulted: "09/02/2026",
+		url: "https://preview.redd.it/whats-your-guys-opinion-on-iwork-for-mac-v0-2d4srjbjfvwc1.jpeg?auto=webp&s=b6f184d4ccef61e4e07a9883c24d29d5667566d6",
 	},
 ];
