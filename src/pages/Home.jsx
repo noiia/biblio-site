@@ -61,28 +61,30 @@ function RenderCard({ item, search, emoji }) {
 
 	return (
 		<Wrapper>
-			<Card>
-				<CardContent className="p-4 flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
-					<div className="text-lg font-medium wrap-break-word">
-						{highlight(item.title || "", search)}
+			<Card className="rounded-xl shadow-sm">
+				<CardContent className="p-4 flex justify-between gap-4">
+					{/* LEFT CONTENT */}
+					<div className="flex flex-col gap-1 min-w-0">
+						<div className="text-lg font-medium wrap-break-word">
+							{highlight(item.title || "", search)}
+						</div>
+
+						{(item.author || item.authors) && (
+							<div className="text-sm text-gray-600 wrap-break-word">
+								{item.author || item.authors?.join(", ")} •{" "}
+								{item.year || item.published}
+							</div>
+						)}
+
+						{(item.source || item.publisher) && (
+							<div className="text-sm text-gray-500 wrap-break-word">
+								{item.source || item.publisher}
+							</div>
+						)}
 					</div>
 
-					{item.author || item.authors ? (
-						<div className="text-sm text-gray-600 wrap-break-word">
-							{item.author || item.authors?.join(", ")} •{" "}
-							{item.year || item.published}
-						</div>
-					) : null}
-
-					{item.source || item.publisher ? (
-						<div className="text-sm text-gray-500 wrap-break-word">
-							{item.source || item.publisher}
-						</div>
-					) : null}
-
-					<div className="text-xl sm:text-2xl self-end sm:self-auto">
-						{emoji}
-					</div>
+					{/* RIGHT EMOJI */}
+					<div className="text-2xl shrink-0">{emoji}</div>
 				</CardContent>
 			</Card>
 		</Wrapper>
@@ -119,10 +121,12 @@ export default function App() {
 				</div>
 
 				{/* 📘 BIBLIOGRAPHIE */}
-				<div className="space-y-3">
+				<div className="space-y-3 ">
 					<h2 className="text-xl font-semibold">📘 Bibliographie</h2>
 					{filteredBib.map((item, i) => (
-						<RenderCard key={i} item={item} search={search} emoji="📘" />
+						<div key={i} className="mb-3 sm:mb-4">
+							<RenderCard item={item} search={search} emoji="📘" />
+						</div>
 					))}
 				</div>
 
@@ -130,7 +134,9 @@ export default function App() {
 				<div className="space-y-3">
 					<h2 className="text-xl font-semibold">🌐 Sitographie</h2>
 					{filteredSit.map((item, i) => (
-						<RenderCard key={i} item={item} search={search} emoji="🌐" />
+						<div key={i} className="mb-3 sm:mb-4">
+							<RenderCard item={item} search={search} emoji="🌐" />
+						</div>
 					))}
 				</div>
 
@@ -138,7 +144,9 @@ export default function App() {
 				<div className="space-y-3">
 					<h2 className="text-xl font-semibold">🖼️ Visuels</h2>
 					{filteredVis.map((item, i) => (
-						<RenderCard key={i} item={item} search={search} emoji="🖼️" />
+						<div key={i} className="mb-3 sm:mb-4">
+							<RenderCard item={item} search={search} emoji="🖼️" />
+						</div>
 					))}
 				</div>
 			</div>
